@@ -39,7 +39,7 @@ print <<EOTEXT;
 [38;2;59;2;111m                                  ╙N, ▀▓╓▓╜,╓▓
 [38;2;45;2;91m                                     `"▓╣▀"
 [0m
-[38;2;45;2;91m                $ip $port $time                               
+[38;2;45;2;91m                 Attack sent to $ip $port $time                               
 EOTEXT
 ;
 for (;time() <= $endtime;) {
