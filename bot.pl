@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 
 ##
-# DgH By SnowmaN<----
+# va pupa sky222 script facut in 3 min :DD
 ##
 
 use Socket;
@@ -39,7 +39,7 @@ print <<EOTEXT;
 [38;2;59;2;111m                                  ╙N, ▀▓╓▓╜,╓▓
 [38;2;45;2;91m                                     `"▓╣▀"
 [0m
-[38;2;45;2;91m                 Attack sent to $ip $port $time                               
+[38;2;45;2;91m                          Attack sent to $ip $port $time                               
 EOTEXT
 ;
 for (;time() <= $endtime;) {
