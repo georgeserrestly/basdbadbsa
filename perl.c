@@ -14,15 +14,15 @@ def modifications():
 	on_enter = input("Please press enter to leave")
 	exit()
 #column:65
-method = """\033[91m
+method = """\033[38;2;251;217;242m
 ╔══════════════════════════════════════════════════════╗
-║                     \033[00mDDoS METHODS\033[91m                     ║               
+║                     \033[00mDDoS METHODS\033[38;2;251;217;242m                     ║               
 ║══════════════════════════════════════════════════════║
-║ \033[00mUDP  <HOST> <PORT> <TIMEOUT> <SIZE>  \033[91m|\033[00m UDP  ATTACK\033[91m   ║
-║ \033[00mICMP <HOST> <PORT> <TIMEOUT> <SIZE>  \033[91m|\033[00m ICMP ATTACK\033[91m   ║
-║ \033[00mSYN  <HOST> <PORT> <TIMEOUT> <SIZE>  \033[91m|\033[00m SYN  ATTACK\033[91m   ║
-║ \033[00mSTD  <HOST> <PORT> <TIMEOUT> <SIZE> \033[91m |\033[00m STD  ATTACK\033[91m   ║
-║ \033[00mHTTP <HOST> <PORT> <TIMEOUT> <SIZE>  \033[91m|\033[00m HTTP ATTACK\033[91m   ║
+║ \033[00mUDP  <host> <port> <timeout> <size>  \033[38;2;251;217;242m|\033[00m UDP  ATTACK\033[38;2;251;217;242m   ║
+║ \033[00mICMP <host> <port> <timeout> <sizE>  \033[38;2;251;217;242m|\033[00m ICMP ATTACK\033[38;2;251;217;242m   ║
+║ \033[00mSYN  <host> <port> <timeout> <size>  \033[38;2;251;217;242m|\033[00m SYN  ATTACK\033[38;2;251;217;242m   ║
+║ \033[00mSTD  <host> <port> <timeout> <size> \033[38;2;251;217;242m |\033[00m STD  ATTACK\033[38;2;251;217;242m   ║
+║ \033[00mHTTP <host> <port> <timeout> <size>  \033[38;2;251;217;242m|\033[00m HTTP ATTACK\033[38;2;251;217;242m   ║
 ╚══════════════════════════════════════════════════════╝\033[00m
 """
 
@@ -31,58 +31,58 @@ info = """
 
 version = "3.2"
 
-help = """\033[91m
+help = """\033[38;2;251;217;242m
 ╔══════════════════════════════════════════════════════╗
-║                    \033[00mBASIC COMMANDS\033[91m                    ║
+║                    \033[00mBASIC COMMANDS\033[38;2;251;217;242m                    ║
 ║══════════════════════════════════════════════════════║
-║ \033[00mClear                         \033[91m|\033[00m CLEAR SCREEN\033[91m         ║
-║ \033[00mExit                          \033[91m|\033[00m EXIT AQUA\033[91m         ║
-║ \033[00mMethods                       \033[91m|\033[00m SINS METHODS\033[91m         ║
-║ \033[00mTools                         \033[91m|\033[00m BASIC TOOLS\033[91m          ║
-║ \033[00mUpdates                       \033[91m|\033[00m DISPLAY UPDATE NOTES\033[91m ║
-║ \033[00mInfo                          \033[91m|\033[00m DISPLAY AQUAS INFO\033[91m║
+║ \033[00mClear                         \033[38;2;251;217;242m|\033[00m CLEAR SCREEN\033[38;2;251;217;242m         ║
+║ \033[00mExit                          \033[38;2;251;217;242m|\033[00m EXIT AQUA\033[38;2;251;217;242m         ║
+║ \033[00mMethods                       \033[38;2;251;217;242m|\033[00m SINS METHODS\033[38;2;251;217;242m         ║
+║ \033[00mTools                         \033[38;2;251;217;242m|\033[00m BASIC TOOLS\033[38;2;251;217;242m          ║
+║ \033[00mUpdates                       \033[38;2;251;217;242m|\033[00m DISPLAY UPDATE NOTES\033[38;2;251;217;242m ║
+║ \033[00mInfo                          \033[38;2;251;217;242m|\033[00m DISPLAY AQUAS INFO\033[38;2;251;217;242m║
 ╚══════════════════════════════════════════════════════╝\033[00m
 """
 
-tools = """\033[91m
+tools = """\033[38;2;251;217;242m
 ╔══════════════════════════════════════════════════════╗
-║                        \033[00mTOOLS\033[91m                         ║
+║                        \033[00mTOOLS\033[38;2;251;217;242m                         ║
 ║══════════════════════════════════════════════════════║
-║ \033[00mStopattacks                   \033[91m|\033[00m STOP ALL ATTACKS\033[91m     ║
-║ \033[00mAttacks                       \033[91m|\033[00m RUNNING ATTACKS\033[91m      ║
-║ \033[00mPing <HOST>                   \033[91m|\033[00m PING A HOST\033[91m          ║
-║ \033[00mResolve <HOST>                \033[91m|\033[00m GRAB A DOMIANS IP\033[91m    ║
-║ \033[00mPortscan <HOST> <RANGE>       \033[91m|\033[00m PORTSCAN A HOST  \033[91m    ║
-║ \033[00mDnsresolve <HOST>             \033[91m|\033[00m GRAB ALL SUB-DOMAINS\033[91m ║
-║ \033[00mStats                         \033[91m|\033[00m DISPLAY AQUA STATS\033[91m║
+║ \033[00mStopattacks                   \033[38;2;251;217;242m|\033[00m STOP ALL ATTACKS\033[38;2;251;217;242m     ║
+║ \033[00mAttacks                       \033[38;2;251;217;242m|\033[00m RUNNING ATTACKS\033[38;2;251;217;242m      ║
+║ \033[00mPing <host>                   \033[38;2;251;217;242m|\033[00m PING A host\033[38;2;251;217;242m          ║
+║ \033[00mResolve <host>                \033[38;2;251;217;242m|\033[00m GRAB A DOMIANS IP\033[38;2;251;217;242m    ║
+║ \033[00mportscan <host> <RANGE>       \033[38;2;251;217;242m|\033[00m portSCAN A host  \033[38;2;251;217;242m    ║
+║ \033[00mDnsresolve <host>             \033[38;2;251;217;242m|\033[00m GRAB ALL SUB-DOMAINS\033[38;2;251;217;242m ║
+║ \033[00mStats                         \033[38;2;251;217;242m|\033[00m DISPLAY AQUA STATS\033[38;2;251;217;242m║
 ╚══════════════════════════════════════════════════════╝\033[00m
 """
 
-updatenotes = """\033[91m
+updatenotes = """\033[38;2;251;217;242m
 ╔══════════════════════════════════════════════════════╗
-║                     \033[00mUPDATE NOTES\033[91m                     ║
+║                     \033[00mUPDATE NOTES\033[38;2;251;217;242m                     ║
 ║══════════════════════════════════════════════════════║
-║ \033[00m- Better ascii menu\033[91m                                  ║
-║ \033[00m- Updated command casing no longer only capital\033[91m      ║
-║ \033[00m- Updated attack methods\033[91m                             ║
-║ \033[00m- Timeout bug fixed\033[91m                                  ║
-║ \033[00m- Background attacks\033[91m                                 ║
-║ \033[00m- Running task displayer\033[91m                             ║
-║ \033[00m- All tools fixed and working\033[91m                        ║
-║ \033[00m- Fixed HTTP & SYN Methods All Methods Working\033[91m       ║ 
-║ \033[00m- Deleted HTTP & Added STD, STD Is Working & Tested\033[91m  ║
+║ \033[00m- Better ascii menu\033[38;2;251;217;242m                                  ║
+║ \033[00m- Updated command casing no longer only capital\033[38;2;251;217;242m      ║
+║ \033[00m- Updated attack methods\033[38;2;251;217;242m                             ║
+║ \033[00m- Timeout bug fixed\033[38;2;251;217;242m                                  ║
+║ \033[00m- Background attacks\033[38;2;251;217;242m                                 ║
+║ \033[00m- Running task displayer\033[38;2;251;217;242m                             ║
+║ \033[00m- All tools fixed and working\033[38;2;251;217;242m                        ║
+║ \033[00m- Fixed HTTP & SYN Methods All Methods Working\033[38;2;251;217;242m       ║ 
+║ \033[00m- Deleted HTTP & Added STD, STD Is Working & Tested\033[38;2;251;217;242m  ║
 ╚══════════════════════════════════════════════════════╝\033[00m
 
 """
 statz = """
 
-║              \033[00mSTATS\033[91m                     ║
+║              \033[00mSTATS\033[38;2;251;217;242m                     ║
 
-\033[00m- Attacks: \033[91m{}                                        
-\033[00m- Found Domains: \033[91m{}                                  
-\033[00m- PINGS: \033[91m{}                                          
-\033[00m- PORTSCANS: \033[91m{}                                      
-\033[00m- GRABBED IPS: \033[91m{}                                 
+\033[00m- Attacks: \033[38;2;251;217;242m{}                                        
+\033[00m- Found Domains: \033[38;2;251;217;242m{}                                  
+\033[00m- PINGS: \033[38;2;251;217;242m{}                                          
+\033[00m- portSCANS: \033[38;2;251;217;242m{}                                      
+\033[00m- GRABBED IPS: \033[38;2;251;217;242m{}                                 
 ╚══════════════════════════════════════════════════════╝\033[00m"""
 banner = """\033[1;00m
 c[0m[38;2;253;239;249m             ╓g`                                               ⁿ▄,
@@ -259,11 +259,11 @@ def main():
 		elif sinput == "version":
 			print ("aqua version: "+version+" ")
 		elif sinput == "stats":
-			print ("\033[00m- Attacks: \033[91m{}                                        ".format (tattacks))
-			print ("\033[00m- Found Domains: \033[91m{}                                  ".format(fsubs))
-			print ("\033[00m- PINGS: \033[91m{}                                          ".format(tpings))
-			print ("\033[00m- PORTSCANS: \033[91m{}                                      ".format(pscans))
-			print ("\033[00m- GRABBED IPS: \033[91m{}\n                                    ".format(liips))
+			print ("\033[00m- Attacks: \033[38;2;251;217;242m{}                                        ".format (tattacks))
+			print ("\033[00m- Found Domains: \033[38;2;251;217;242m{}                                  ".format(fsubs))
+			print ("\033[00m- PINGS: \033[38;2;251;217;242m{}                                          ".format(tpings))
+			print ("\033[00m- portSCANS: \033[38;2;251;217;242m{}                                      ".format(pscans))
+			print ("\033[00m- GRABBED IPS: \033[38;2;251;217;242m{}\n                                    ".format(liips))
 			main()
 		elif sinput == "methods":
 			print (method)
@@ -278,7 +278,7 @@ def main():
 				try:
 					sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 					sock.connect((ip, port))
-					print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] {}\033[91m:\033[00m{} [\033[91mOPEN\033[00m]".format (ip, port))
+					print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] {}\033[38;2;251;217;242m:\033[00m{} [\033[38;2;251;217;242mOPEN\033[00m]".format (ip, port))
 					sock.close()
 				except socket.error:
 					return
@@ -311,22 +311,22 @@ def main():
 					try:
 						url = link.strip() + "." + host
 						subips = socket.gethostbyname(url)
-						print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] Domain: https://{} \033[91m>\033[00m Converted: {} [\033[91mEXISTANT\033[00m]".format(url, subips))
+						print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] Domain: https://{} \033[38;2;251;217;242m>\033[00m Converted: {} [\033[38;2;251;217;242mEXISTANT\033[00m]".format(url, subips))
 						sfound += 1
 						fsubs += 1
 						sys.stdout.write("\x1b]2;A Q U A |{}| F O U N D\x07".format (sfound))
 					except socket.error:
 						pass
-						#print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] Domain: {} [\033[91mNON-EXISTANT\033[00m]".format(url))
+						#print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] Domain: {} [\033[38;2;251;217;242mNON-EXISTANT\033[00m]".format(url))
 				print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] Task complete | found: {}".format(sfound))
 				main()
 			except IndexError:
-				print ('ADD THE HOST!')
+				print ('ADD THE host!')
 		elif sinput == "resolve":
 			liips += 1
 			host = sin.split(" ")[1]
 			host_ip = socket.gethostbyname(host)
-			print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] Host: {} \033[00m[\033[91mConverted\033[00m] {}".format (host, host_ip))
+			print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] host: {} \033[00m[\033[38;2;251;217;242mConverted\033[00m] {}".format (host, host_ip))
 			main()
 		elif sinput == "ping":
 			tpings += 1
@@ -336,7 +336,7 @@ def main():
 				try:
 					ip = socket.gethostbyname(host)
 				except socket.gaierror:
-					print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] Host un-resolvable")
+					print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] host un-resolvable")
 					main()
 				while True:
 					try:
@@ -346,12 +346,12 @@ def main():
 						sock.connect ((host, int(port)))
 						stop = int(time.time() * 1000 - start)
 						sys.stdout.write("\x1b]2;S I N F U L L |{}ms| D E M O N S\x07".format (stop))
-						print ("AQUA: {}:{} | Time: {}ms [\033[91mUP\033[00m]".format(ip, port, stop))
+						print ("AQUA: {}:{} | Time: {}ms [\033[38;2;251;217;242mUP\033[00m]".format(ip, port, stop))
 						sock.close()
 						time.sleep(1)
 					except socket.error:
 						sys.stdout.write("\x1b]2;S I N F U L L |TIME OUT| D E M O N S\x07")
-						print ("AQUA: {}:{} [\033[91mDOWN\033[00m]".format(ip, port))
+						print ("AQUA: {}:{} [\033[38;2;251;217;242mDOWN\033[00m]".format(ip, port))
 						time.sleep(1)
 					except KeyboardInterrupt:
 						print("")
@@ -374,7 +374,7 @@ def main():
 					print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] The command {} requires an argument".format (sinput))
 					main()
 				except socket.gaierror:
-					print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] Host: {} invalid".format (host))
+					print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] host: {} invalid".format (host))
 					main()
 		elif sinput == "std":
 			try:
@@ -387,7 +387,7 @@ def main():
 				print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] The command {} requires an argument".format (sinput))
 				main()
 			except socket.gaierror:
-				print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] Host: {} invalid".format (host))
+				print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] host: {} invalid".format (host))
 				main()
 		elif sinput == "icmp":
 			if username == "guests":
@@ -404,7 +404,7 @@ def main():
 					print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] The command {} requires an argument".format (sinput))
 					main()
 				except socket.gaierror:
-					print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] Host: {} invalid".format (host))
+					print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] host: {} invalid".format (host))
 					main()
 		elif sinput == "syn":
 			try:
@@ -417,7 +417,7 @@ def main():
 				print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] The command {} requires an argument".format (sinput))
 				main()
 			except socket.gaierror:
-				print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] Host: {} invalid".format (host))
+				print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] host: {} invalid".format (host))
 				main()
 		elif sinput == "stopattacks":
 			attack = False
@@ -481,7 +481,7 @@ try:
 			exit()
 	if user == "guests":
 		if password == passwords[1]:
-			print ("[+] Login correct")
+			print ("")
 			print ("[+] Certain methods will not be available to you")
 			time.sleep(4)
 			os.system (clear)
