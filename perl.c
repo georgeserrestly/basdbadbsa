@@ -243,7 +243,7 @@ def main():
 
 	while True:
 		sys.stdout.write("\x1b]2;Devices: 5 | Aqua V1\x07")
-		sin = input("\[38;2;241;102;204mAQUA\033[1;00m]-\033[91m家\033[00m ").lower()
+		sin = input("\033[1;00m AQUA c[0m[38;2;253;239;249m- 家").lower()
 		sinput = sin.split(" ")[0]
 		if sinput == "clear":
 			os.system ("clear")
