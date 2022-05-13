@@ -103,7 +103,7 @@ def synsender(host, port, timer, punch):
 	said -= 1
 	aid -= 1
 
-def udpsender(host, port, timer):
+def udpsender(host, port, timer, punch):
 	global uaid
 	global udp
 	global aid
