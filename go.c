@@ -56,14 +56,14 @@ banner = """\033[1;00m
                                 \x1b[1;35m ╦\x1b[1;32m╔═╗\x1b[1;35m╦╔═\x1b[1;32m╔═╗\x1b[1;35m╦═╗\x1b[0m
                                 \x1b[1;35m ║\x1b[1;32m║ ║\x1b[1;35m╠╩╗\x1b[1;32m║╣ \x1b[1;35m╠╦╝\x1b[0m
                                 \x1b[1;35m╚╝\x1b[1;32m╚═╝\x1b[1;35m╩ ╩\x1b[1;32m╚═╝\x1b[1;35m╩╚═\x1b[0m
-\x1b[90m                                  We are all clowns                                                     
+\x1b[90m                             We are all clowns                                                     
 """
 
 altbanner = """
                                 \x1b[1;35m ╦\x1b[1;32m╔═╗\x1b[1;35m╦╔═\x1b[1;32m╔═╗\x1b[1;35m╦═╗\x1b[0m
                                 \x1b[1;35m ║\x1b[1;32m║ ║\x1b[1;35m╠╩╗\x1b[1;32m║╣ \x1b[1;35m╠╦╝\x1b[0m
                                 \x1b[1;35m╚╝\x1b[1;32m╚═╝\x1b[1;35m╩ ╩\x1b[1;32m╚═╝\x1b[1;35m╩╚═\x1b[0m
-\x1b[90m                                  We are all clowns                                                                                                                    
+\x1b[90m                             We are all clowns                                                                                                                     
 """
 
 cookie = open(".JOKER_cookie","w+")
@@ -191,7 +191,7 @@ def main():
 
 	while True:
 		sys.stdout.write("\x1b]2;2 Online Users | 2998 Clowns | vF | User: root\x07")
-		sin = input("\x1b[1;35mroot\x1b[1;32m@joker\r\n").lower()
+		sin = input("\x1b[1;35mroot\x1b[1;32m@joker\n").lower()
 		sinput = sin.split(" ")[0]
 		if sinput == "clear":
 			os.system ("clear")
@@ -399,7 +399,12 @@ try:
 	users = ["root", "guests", "me"]
 	clear = "clear"
 	os.system (clear)
-	username = getpass.getpass ("[+] Username: ")
+		print ("\x1b[1;32m ▐▄▄▄      ▄ •▄ ▄▄▄ .▄▄▄  \r\n")
+		print ("\x1b[1;35m  ·██▪     █▌▄▌▪▀▄.▀·▀▄ █·\r\n")
+		print ("\x1b[1;32m▪▄ ██ ▄█▀▄ ▐▀▀▄·▐▀▀▪▄▐▀▀▄ \r\n")
+		print ("\x1b[1;35m▐▌▐█▌▐█▌.▐▌▐█.█▌▐█▄▄▌▐█•█▌\r\n")
+		print ("\x1b[1;32m ▀▀▀• ▀█▄▀▪·▀  ▀ ▀▀▀ .▀  ▀\r\n")
+	username = getpass.getpass ("\x1b[1;35mUsername\x1b[1;35m: \x1b[0m")
 	if username in users:
 		user = username
 	else:
@@ -410,7 +415,7 @@ except KeyboardInterrupt:
 	exit()
 try:
 	passwords = ["root", "gayman", "me"]
-	password = getpass.getpass ("[+] Password: ")
+	password = getpass.getpass ("\x1b[1;32mPassword\x1b[1;32m: \x1b[0m")
 	if user == "root":
 		if password == passwords[0]:
 			print ("[+] Login correct")
