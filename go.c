@@ -394,17 +394,16 @@ def main():
 			main()
 
 
-
-try:
-	users = ["root", "guests", "me"]
-	clear = "clear"
-	os.system (clear)
 	else:
 		print ("\x1b[1;32m ▐▄▄▄      ▄ •▄ ▄▄▄ .▄▄▄  \r\n")
 		print ("\x1b[1;35m  ·██▪     █▌▄▌▪▀▄.▀·▀▄ █·\r\n")
 		print ("\x1b[1;32m▪▄ ██ ▄█▀▄ ▐▀▀▄·▐▀▀▪▄▐▀▀▄ \r\n")
 		print ("\x1b[1;35m▐▌▐█▌▐█▌.▐▌▐█.█▌▐█▄▄▌▐█•█▌\r\n")
 		print ("\x1b[1;32m ▀▀▀• ▀█▄▀▪·▀  ▀ ▀▀▀ .▀  ▀\r\n")
+try:
+	users = ["root", "guests", "me"]
+	clear = "clear"
+	os.system (clear)
 	username = getpass.getpass ("\x1b[1;35mUsername\x1b[1;35m: \x1b[0m")
 	if username in users:
 		user = username
