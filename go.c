@@ -191,7 +191,7 @@ def main():
 
 	while True:
 		sys.stdout.write("\x1b]2;2 Online Users | 2998 Clowns | vF | User: root\x07")
-		sin = input("\x1b[1;35mroot\x1b[1;32m@joker").lower()
+		sin = input("\x1b[1;35mroot\x1b[1;32m@joker\r\n").lower()
 		sinput = sin.split(" ")[0]
 		if sinput == "clear":
 			os.system ("clear")
