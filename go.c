@@ -399,6 +399,7 @@ try:
 	users = ["root", "guests", "me"]
 	clear = "clear"
 	os.system (clear)
+	else:
 		print ("\x1b[1;32m ▐▄▄▄      ▄ •▄ ▄▄▄ .▄▄▄  \r\n")
 		print ("\x1b[1;35m  ·██▪     █▌▄▌▪▀▄.▀·▀▄ █·\r\n")
 		print ("\x1b[1;32m▪▄ ██ ▄█▀▄ ▐▀▀▄·▐▀▀▪▄▐▀▀▄ \r\n")
