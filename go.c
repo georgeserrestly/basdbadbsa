@@ -56,14 +56,14 @@ banner = """\033[1;00m
                                 \x1b[1;35m ╦\x1b[1;32m╔═╗\x1b[1;35m╦╔═\x1b[1;32m╔═╗\x1b[1;35m╦═╗\x1b[0m
                                 \x1b[1;35m ║\x1b[1;32m║ ║\x1b[1;35m╠╩╗\x1b[1;32m║╣ \x1b[1;35m╠╦╝\x1b[0m
                                 \x1b[1;35m╚╝\x1b[1;32m╚═╝\x1b[1;35m╩ ╩\x1b[1;32m╚═╝\x1b[1;35m╩╚═\x1b[0m
-\x1b[90m                             We are all clowns                                                     
+\x1b[90m                              We are all clowns                                                     
 """
 
 altbanner = """
                                 \x1b[1;35m ╦\x1b[1;32m╔═╗\x1b[1;35m╦╔═\x1b[1;32m╔═╗\x1b[1;35m╦═╗\x1b[0m
                                 \x1b[1;35m ║\x1b[1;32m║ ║\x1b[1;35m╠╩╗\x1b[1;32m║╣ \x1b[1;35m╠╦╝\x1b[0m
                                 \x1b[1;35m╚╝\x1b[1;32m╚═╝\x1b[1;35m╩ ╩\x1b[1;32m╚═╝\x1b[1;35m╩╚═\x1b[0m
-\x1b[90m                             We are all clowns                                                                                                                     
+\x1b[90m                              We are all clowns                                                                                                                     
 """
 
 cookie = open(".JOKER_cookie","w+")
@@ -103,7 +103,7 @@ def synsender(host, port, timer, punch):
 	said -= 1
 	aid -= 1
 
-def udpsender(host, port, timer, punch):
+def udpsender(host, port, timer):
 	global uaid
 	global udp
 	global aid
@@ -397,18 +397,12 @@ def main():
 try:
 	users = ["root", "guests", "me"]
 	clear = "clear"
-	else:
-		print ("\x1b[1;32m ▐▄▄▄      ▄ •▄ ▄▄▄ .▄▄▄  \r\n")
-		print ("\x1b[1;35m  ·██▪     █▌▄▌▪▀▄.▀·▀▄ █·\r\n")
-		print ("\x1b[1;32m▪▄ ██ ▄█▀▄ ▐▀▀▄·▐▀▀▪▄▐▀▀▄ \r\n")
-		print ("\x1b[1;35m▐▌▐█▌▐█▌.▐▌▐█.█▌▐█▄▄▌▐█•█▌\r\n")
-		print ("\x1b[1;32m ▀▀▀• ▀█▄▀▪·▀  ▀ ▀▀▀ .▀  ▀\r\n")
 	os.system (clear)
 	username = getpass.getpass ("\x1b[1;35mUsername\x1b[1;35m: \x1b[0m")
 	if username in users:
 		user = username
 	else:
-		print ("[+] Incorrect, exiting")
+		print ("\x1b[1;35m[+] Not Working\x1b[1;35m: \x1b[0m")
 		exit()
 except KeyboardInterrupt:
 	print ("\nCTRL-C Pressed")
