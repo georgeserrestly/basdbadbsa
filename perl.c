@@ -31,13 +31,13 @@ info = """
 version = "3.2"
 
 help = """
-[1;90m            --> | Help | <--     \r\n
-[1;35m╔═════════════════════════════════════╗\x1b[0m
-[1;32m║ ports  \x1b[90m- \x1b[0mShows Ports                \x1b[1;35m║\x1b[0m
-[1;32m║ bypass  \x1b[90m- \x1b[0mShows Bypass Commands     \x1b[1;35m║\x1b[0m
-[1;35m║ methods \x1b[90m- \x1b[0mShows Attack Commands     \x1b[1;32m║\x1b[0m
-[1;35m║ admin   \x1b[90m- \x1b[0mShows Admin Commands      \x1b[1;32m║\x1b[0m
-[1;32m╚═════════════════════════════════════╝\x1b[0m\r\n
+\x1b[1;90m            --> | Help | <--     \r\n
+\x1b[1;35m╔═════════════════════════════════════╗\x1b[0m
+\x1b[1;32m║ ports  \x1b[90m- \x1b[0mShows Ports                \x1b[1;35m║\x1b[0m
+\x1b[1;32m║ bypass  \x1b[90m- \x1b[0mShows Bypass Commands     \x1b[1;35m║\x1b[0m
+\x1b[1;35m║ methods \x1b[90m- \x1b[0mShows Attack Commands     \x1b[1;32m║\x1b[0m
+\x1b[1;35m║ admin   \x1b[90m- \x1b[0mShows Admin Commands      \x1b[1;32m║\x1b[0m
+\x1b[1;32m╚═════════════════════════════════════╝\x1b[0m\r\n
 """
 
 tools = """\033[38;2;251;217;242m
@@ -81,17 +81,17 @@ statz = """
 \033[00m- GRABBED IPS: \033[38;2;251;217;242m{}                                 
 ╚══════════════════════════════════════════════════════╝\033[00m"""
 banner = """\033[1;00m
-                                [1;35m ╦\x1b[1;32m╔═╗\x1b[1;35m╦╔═\x1b[1;32m╔═╗\x1b[1;35m╦═╗\x1b[0m
-                                [1;35m ║\x1b[1;32m║ ║\x1b[1;35m╠╩╗\x1b[1;32m║╣ \x1b[1;35m╠╦╝\x1b[0m
-                                [1;35m╚╝\x1b[1;32m╚═╝\x1b[1;35m╩ ╩\x1b[1;32m╚═╝\x1b[1;35m╩╚═\x1b[0m
-[90m                                  We are all clowns    
+                                \x1b[1;35m ╦\x1b[1;32m╔═╗\x1b[1;35m╦╔═\x1b[1;32m╔═╗\x1b[1;35m╦═╗\x1b[0m
+                                \x1b[1;35m ║\x1b[1;32m║ ║\x1b[1;35m╠╩╗\x1b[1;32m║╣ \x1b[1;35m╠╦╝\x1b[0m
+                                \x1b[1;35m╚╝\x1b[1;32m╚═╝\x1b[1;35m╩ ╩\x1b[1;32m╚═╝\x1b[1;35m╩╚═\x1b[0m
+\x1b[90m                                  We are all clowns    
 """
 
 altbanner = """
-                                [1;35m ╦\x1b[1;32m╔═╗\x1b[1;35m╦╔═\x1b[1;32m╔═╗\x1b[1;35m╦═╗\x1b[0m
-                                [1;35m ║\x1b[1;32m║ ║\x1b[1;35m╠╩╗\x1b[1;32m║╣ \x1b[1;35m╠╦╝\x1b[0m
-                                [1;35m╚╝\x1b[1;32m╚═╝\x1b[1;35m╩ ╩\x1b[1;32m╚═╝\x1b[1;35m╩╚═\x1b[0m
-[90m                                  We are all clowns                                                                   
+                                \x1b[1;35m ╦\x1b[1;32m╔═╗\x1b[1;35m╦╔═\x1b[1;32m╔═╗\x1b[1;35m╦═╗\x1b[0m
+                                \x1b[1;35m ║\x1b[1;32m║ ║\x1b[1;35m╠╩╗\x1b[1;32m║╣ \x1b[1;35m╠╦╝\x1b[0m
+                                \x1b[1;35m╚╝\x1b[1;32m╚═╝\x1b[1;35m╩ ╩\x1b[1;32m╚═╝\x1b[1;35m╩╚═\x1b[0m
+\x1b[90m                                  We are all clowns                                                                   
 """
 
 cookie = open(".AQUA_cookie","w+")
