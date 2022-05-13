@@ -14,15 +14,16 @@ def modifications():
 	on_enter = input("Please press enter to leave")
 	exit()
 #column:65
-method = """\033[38;2;251;217;242m
-╔══════════════════════════════════════════════════════╗
-║                     \033[00mMETHODS\033[38;2;251;217;242m                     ║               
-║══════════════════════════════════════════════════════║
-║ \033[00mUDP  <host> <port> <timeout> <size>  \033[38;2;251;217;242m|\033[00m UDP  ATTACK\033[38;2;251;217;242m   ║
-║ \033[00mSYN  <host> <port> <timeout> <size>  \033[38;2;251;217;242m|\033[00m SYN  ATTACK\033[38;2;251;217;242m   ║
-║ \033[00mOVH  <host> <port> <timeout> <size> \033[38;2;251;217;242m |\033[00m OVH  ATTACK\033[38;2;251;217;242m   ║
-║ \033[00mHTTP <host> <port> <timeout> <size>  \033[38;2;251;217;242m|\033[00m HTTP ATTACK\033[38;2;251;217;242m   ║
-╚══════════════════════════════════════════════════════╝\033[00m
+method = """\x1b[1;90m                --> | Methods | <--                 
+\x1b[1;35m╔═════════════════════════════════════════════════╗\x1b[0m
+\x1b[1;32m║ udp [IP] [TIME] dport=[PORT] \x1b[90m- \x1b[0mUDP Flood        \x1b[1;35m║\x1b[0m
+\x1b[1;35m║ std [IP] [TIME] dport=[PORT] \x1b[90m- \x1b[0mSTD Flood        \x1b[1;32m║\x1b[0m          
+\x1b[1;32m║ tcp [IP] [TIME] dport=[PORT] \x1b[90m- \x1b[0mTCP Flood        \x1b[1;35m║\x1b[0m
+\x1b[1;35m║ dns [IP] [TIME] dport=[PORT] \x1b[90m- \x1b[0mDNS Flood        \x1b[1;32m║\x1b[0m
+\x1b[1;32m║ vse  [IP] [TIME] dport=[PORT] \x1b[90m- \x1b[0mR6 Flood        \x1b[1;35m║\x1b[0m
+\x1b[1;32m║ ack [IP] [TIME] dport=[PORT] \x1b[90m- \x1b[0mACK FLood        \x1b[1;35m║\x1b[0m
+\x1b[1;35m║ xmas [IP] [TIME] dport=[PORT] \x1b[90m- \x1b[0mXMAS Flood      \x1b[1;32m║\x1b[0m
+\x1b[1;35m╚═════════════════════════════════════════════════╝\x1b[0m
 """
 
 info = """
@@ -38,36 +39,7 @@ help = """
 \x1b[1;35m║ methods \x1b[90m- \x1b[0mShows Attack Commands     \x1b[1;32m║\x1b[0m
 \x1b[1;35m║ admin   \x1b[90m- \x1b[0mShows Admin Commands      \x1b[1;32m║\x1b[0m
 \x1b[1;32m╚═════════════════════════════════════╝\x1b[0m\r\n
-"""
-
-tools = """\033[38;2;251;217;242m
-╔══════════════════════════════════════════════════════╗
-║                        \033[00mTOOLS\033[38;2;251;217;242m                         ║
-║══════════════════════════════════════════════════════║
-║ \033[00mStopattacks                   \033[38;2;251;217;242m|\033[00m STOP ALL ATTACKS\033[38;2;251;217;242m     ║
-║ \033[00mAttacks                       \033[38;2;251;217;242m|\033[00m RUNNING ATTACKS\033[38;2;251;217;242m      ║
-║ \033[00mPing <host>                   \033[38;2;251;217;242m|\033[00m PING A host\033[38;2;251;217;242m          ║
-║ \033[00mResolve <host>                \033[38;2;251;217;242m|\033[00m GRAB A DOMIANS IP\033[38;2;251;217;242m    ║
-║ \033[00mportscan <host> <RANGE>       \033[38;2;251;217;242m|\033[00m portSCAN A host  \033[38;2;251;217;242m    ║
-║ \033[00mDnsresolve <host>             \033[38;2;251;217;242m|\033[00m GRAB ALL SUB-DOMAINS\033[38;2;251;217;242m ║
-║ \033[00mStats                         \033[38;2;251;217;242m|\033[00m DISPLAY AQUA STATS\033[38;2;251;217;242m║
-╚══════════════════════════════════════════════════════╝\033[00m
-"""
-
-updatenotes = """\033[38;2;251;217;242m
-╔══════════════════════════════════════════════════════╗
-║                     \033[00mUPDATE NOTES\033[38;2;251;217;242m                     ║
-║══════════════════════════════════════════════════════║
-║ \033[00m- Better ascii menu\033[38;2;251;217;242m                                  ║
-║ \033[00m- Updated command casing no longer only capital\033[38;2;251;217;242m      ║
-║ \033[00m- Updated attack methods\033[38;2;251;217;242m                             ║
-║ \033[00m- Timeout bug fixed\033[38;2;251;217;242m                                  ║
-║ \033[00m- Background attacks\033[38;2;251;217;242m                                 ║
-║ \033[00m- Running task displayer\033[38;2;251;217;242m                             ║
-║ \033[00m- All tools fixed and working\033[38;2;251;217;242m                        ║
-║ \033[00m- Fixed HTTP & SYN Methods All Methods Working\033[38;2;251;217;242m       ║ 
-║ \033[00m- Deleted HTTP & Added STD, STD Is Working & Tested\033[38;2;251;217;242m  ║
-╚══════════════════════════════════════════════════════╝\033[00m
+""
 
 """
 statz = """
@@ -84,14 +56,14 @@ banner = """\033[1;00m
                                 \x1b[1;35m ╦\x1b[1;32m╔═╗\x1b[1;35m╦╔═\x1b[1;32m╔═╗\x1b[1;35m╦═╗\x1b[0m
                                 \x1b[1;35m ║\x1b[1;32m║ ║\x1b[1;35m╠╩╗\x1b[1;32m║╣ \x1b[1;35m╠╦╝\x1b[0m
                                 \x1b[1;35m╚╝\x1b[1;32m╚═╝\x1b[1;35m╩ ╩\x1b[1;32m╚═╝\x1b[1;35m╩╚═\x1b[0m
-\x1b[90m                                  We are all clowns    
+\x1b[90m                                  We are all clowns                                                     
 """
 
 altbanner = """
                                 \x1b[1;35m ╦\x1b[1;32m╔═╗\x1b[1;35m╦╔═\x1b[1;32m╔═╗\x1b[1;35m╦═╗\x1b[0m
                                 \x1b[1;35m ║\x1b[1;32m║ ║\x1b[1;35m╠╩╗\x1b[1;32m║╣ \x1b[1;35m╠╦╝\x1b[0m
                                 \x1b[1;35m╚╝\x1b[1;32m╚═╝\x1b[1;35m╩ ╩\x1b[1;32m╚═╝\x1b[1;35m╩╚═\x1b[0m
-\x1b[90m                                  We are all clowns                                                                   
+\x1b[90m                                  We are all clowns                                                                                                                    
 """
 
 cookie = open(".AQUA_cookie","w+")
@@ -219,7 +191,7 @@ def main():
 
 	while True:
 		sys.stdout.write("\x1b]2;Devices: 5 | Aqua V1\x07")
-		sin = input("\033[38;2;253;239;249m[\033[38;2;253;239;249mAQUA\033[38;2;253;239;249m]-\033[38;2;59;2;111m家\033[00m ").lower()
+		sin = input("\x1b[1;35mroot\x1b[1;32mjoker[00m ").lower()
 		sinput = sin.split(" ")[0]
 		if sinput == "clear":
 			os.system ("clear")
