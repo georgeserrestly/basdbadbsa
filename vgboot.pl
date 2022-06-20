@@ -25,16 +25,7 @@ socket(flood, PF_INET, SOCK_DGRAM, 17);
  
 print BOLD GREEN<<EOTEXT;
 
-||'  '|' '||''|.   '||''|.         IP: $ip
-||    |   ||   ||   ||   ||      PORT: $port
-||    |   ||    ||  ||...|'   PACKETS: $size
-||    |   ||    ||  ||           TIME: $time
- '|..'   .||...|'  .||.
-
-DDoS GoD By Vinix G YoU JuSt HiT $ip with $size packets.
-
--VGBoot DDoS script.
-By: xxjasontpikexx AKA DEEP-WEB (GHOST HACKER)                 
+s-a cam dus ce sa faci :)))))))))))))))))) $ip        
        
 EOTEXT
  
